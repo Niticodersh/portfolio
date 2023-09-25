@@ -1,0 +1,301 @@
+/* Add this CSS to your existing style.css file or create a new one */
+
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    flex: content;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('Profile.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    overflow: hidden;
+    flex: auto;
+}
+
+
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+/* About */
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Additional styles for section headings */
+.container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* CSS for the Download CV button */
+.btn {
+    padding: 10px 20px; /* Adjust padding to change the button size */
+    font-size: 18px;
+    background-color: #ff004f; /* Change the background color to your preferred color */
+    color: #fff; /* Change the text color to white or your preferred color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn i {
+    margin-right: 10px; /* Add spacing between the icon and text */
+}
+
+.btn:hover {
+    background-color: #d30045; /* Change the background color on hover */
+}
+.copyright{
+width:100%;
+text-align:center;
+padding: 25px 0;
+background: #262626;
+font-weight: 300;
+}
+/* projects.css */
+
+/* projects.css */
+
+/* Project Container */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Project Box Styles */
+.project-box {
+    position: relative; /* Add this line for relative positioning */
+    width: calc(25% - 20px); /* Adjust the width to fit your layout */
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    
+    flex-direction: column; /* Display children in a column layout */
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+}
+
+.project-box img {
+    width: 100%; /* Set a fixed width */
+    height: 100%; /* Set a fixed height */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: auto;
+    flex: 100%;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Expand to fill available space */
+}
+
+.project-description {
+    font-size: 14px;
+    color: #666;
+    flex-grow: 2; /* Expand to fill available space */
+    margin-bottom: 10px; /* Add margin to separate description and GitHub link */
+}
+
+/* Position GitHub link at the bottom */
+.project-github {
+    text-decoration: none;
+    color: #ff004f;
+    font-weight: bold;
+    margin-top: auto; /* Push to the bottom */
+}
+
+/* Contact Me Section */
+#contact {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-left {
+    text-align: left;
+}
+
+
+
+.contact-info {
+    text-align: left;
+    font-size: 16px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .header-text {
+        margin-top: 10%;
+        font-size: 24px; /* Adjust font size */
+    }
+
+    .nav ul li a {
+        font-size: 16px; /* Adjust font size */
+    }
+   
+}
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack columns on smaller screens */
+    }
+   
+
+
+    .about-col-1 {
+        flex-basis: 100%; /* Take full width on smaller screens */
+    }
+
+    .about-col-2 {
+        flex-basis: 100%; /* Take full width on smaller screens */
+    }
+    
+}
+@media (max-width: 768px) {
+    .project-box {
+        width: calc(50% - 20px); /* Two columns on smaller screens */
+    }
+   
+}
+@media (max-width: 768px) {
+    .contact-info {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .contact-info p {
+        margin: 5px 0;
+    }
+  
+
+    .social-icons {
+        margin-top: 10px; /* Adjust margin-top */
+    }
+
+    .social-icons a {
+        font-size: 20px; /* Adjust font size */
+    }
+}
+
+
